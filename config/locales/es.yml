@@ -1464,6 +1464,7 @@ es:
     security_settings: Preferencias de seguridad
     select: Seleccionar
     select_from_prototype: Seleccionar desde el prototipo
+    select_an_option: Seleccione una opción
     select_a_date: Selecciona una fecha
     select_a_date_range: Selecciona un rango de fechas
     select_a_return_authorization_reason: Seleccione un motivo para la autorización de devolución

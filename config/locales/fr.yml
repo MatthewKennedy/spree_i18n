@@ -1702,6 +1702,7 @@ fr:
     secure_connection_type: Type de connexion sécurisée
     security_settings: Paramètres de sécurité
     select: Sélectionner
+    select_an_option: sélectionner une option
     select_a_return_authorization_reason:
     select_a_stock_location:
     select_a_store_credit_reason: Choisissez une raison pour recevoir un crédit

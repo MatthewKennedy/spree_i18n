@@ -1253,6 +1253,7 @@ lt:
     secure_connection_type: Saugaus susijungimo tipas
     security_settings: Saugumo nustatymai
     select: Pasirinkti
+    select_an_option: seleziona un'opzione
     select_a_return_authorization_reason: Pasirinkti grąžinimo patvirtinimo priežastį
     select_a_stock_location: Pasirikti sandėlio likučio vietą
     select_a_store_credit_reason: Priežastis suteikti kreditą
