@@ -1,5 +1,5 @@
 ---
-en-US:
+en:
   activemodel:
     errors:
       models:
@@ -38,7 +38,7 @@ en-US:
         name: Name
         numcode: ISO Code
       spree/credit_card:
-        base: ''
+        base: Base
         cc_type: Type
         month: Month
         name: Name
@@ -439,7 +439,7 @@ en-US:
   number:
     percentage:
       format:
-        precision: 1
+        precision: '1'
   pagination:
     first: "&laquo;"
     last: "&raquo;"
@@ -906,7 +906,7 @@ en-US:
       select_locale: Select locale
       show_only: Show only
       supported_locales: Supported Locales
-      this_file_language: English (en-US)
+      this_file_language: English (US)
       translations: Translations
     icon: Icon
     image: Image

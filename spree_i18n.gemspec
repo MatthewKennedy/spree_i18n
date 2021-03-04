@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'kaminari-i18n'
   s.add_runtime_dependency 'spree_core', '>= 4.2.0.rc3', '< 5.0'
   s.add_runtime_dependency 'spree_extension'
+  s.add_runtime_dependency 'i18n-tasks', '~> 0.9.33'
 
   s.add_development_dependency 'spree_dev_tools'
 end
