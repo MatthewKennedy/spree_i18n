@@ -6,15 +6,6 @@ module SpreeI18n
 
     config.autoload_paths += %W(#{config.root}/lib)
 
-    initializer 'spree-i18n' do |app|
-      SpreeI18n::Engine.instance_eval do
-        pattern = pattern_from app.config.i18n.available_locales
-
-        add("config/locales/#{pattern}/*.{rb,yml}")
-        add("config/locales/#{pattern}.{rb,yml}")
-      end
-    end
-
     initializer 'spree_i18n.environment', before: :load_config_initializers do |app|
       app.config.i18n.fallbacks = true
       I18n.locale = app.config.i18n.default_locale if app.config.i18n.default_locale
