@@ -21,11 +21,15 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_runtime_dependency 'i18n_data'
-  s.add_runtime_dependency 'rails-i18n'
-  s.add_runtime_dependency 'kaminari-i18n'
-  s.add_runtime_dependency 'spree_core', '>= 4.2.0.rc3', '< 5.0'
-  s.add_runtime_dependency 'spree_extension'
-
+  s.add_development_dependency 'devise'
+  s.add_development_dependency 'kaminari'
+  s.add_development_dependency 'spree_api'
+  s.add_development_dependency 'spree_auth_devise'
+  s.add_development_dependency 'spree_backend'
+  s.add_development_dependency 'spree_core'
   s.add_development_dependency 'spree_dev_tools'
+  s.add_development_dependency 'spree_extension'
+  s.add_development_dependency 'spree_frontend'
+  s.add_development_dependency 'spree_gateway'
+  s.add_development_dependency 'translation'
 end
