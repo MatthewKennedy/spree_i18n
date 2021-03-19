@@ -32,4 +32,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'spree_frontend'
   s.add_development_dependency 'spree_gateway'
   s.add_development_dependency 'translation'
+  s.add_development_dependency "rails-dummy", "~> 0.1.0"
 end

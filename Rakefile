@@ -21,11 +21,11 @@ task :test_app do
 end
 
 namespace :spree_i18n do
-  desc 'Generates a dummy app for translating'
-  task :translation_app do
-    ENV['LIB_NAME'] = 'spree_i18n'
-    ENV['DUMMY_PATH'] = ''
-    Rake::Task['extension:test_app'].invoke
+  desc "Create a translation app"
+  task :create_translation_app do
+
+    ENV["DUMMY_APP_PATH"] = "/"
+    Rake::Task["dummy:app"].invoke
   end
 
   desc 'Sync Translation Files'
