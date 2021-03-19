@@ -14,4 +14,4 @@
 --skip-javascript
 --skip-test
 
---template=sp/template/translation_app_template.rb
+--template=translation_holder/template/translation_app_template.rb

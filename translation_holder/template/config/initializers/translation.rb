@@ -1,15 +1,21 @@
 TranslationIO.configure do |config|
   config.api_key        = ENV["TRANSLATION_IO_API_KEY"]
   config.source_locale  = 'en'
-  config.target_locales = ['de', 'no', 'it', 'fr']
-  config.yaml_locales_path = '../config/locales'
+  config.target_locales = ['de']
+  config.yaml_locales_path = '../../config/locales'
   config.disable_gettext = true
 
   config.ignored_key_prefixes = [
     'hello',
+    'helpers',
     'date',
     'spree.at_symbol',
     'spree.date_picker',
-    'spree.i18n.this_file_language'
+    'spree.i18n.this_file_language',
+    'time',
+    'number',
+    'datetime',
+    'doorkeeper',
+    'views'
   ]
 end

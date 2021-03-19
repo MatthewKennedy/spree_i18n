@@ -21,16 +21,8 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_development_dependency 'devise'
-  s.add_development_dependency 'kaminari'
-  s.add_development_dependency 'spree_api'
-  s.add_development_dependency 'spree_auth_devise'
-  s.add_development_dependency 'spree_backend'
-  s.add_development_dependency 'spree_core'
   s.add_development_dependency 'spree_dev_tools'
   s.add_development_dependency 'spree_extension'
-  s.add_development_dependency 'spree_frontend'
-  s.add_development_dependency 'spree_gateway'
   s.add_development_dependency 'translation'
   s.add_development_dependency "rails-dummy", "~> 0.1.0"
 end

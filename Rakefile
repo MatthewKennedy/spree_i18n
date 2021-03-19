@@ -3,6 +3,7 @@ Bundler::GemHelper.install_tasks
 
 require 'rspec/core/rake_task'
 require 'spree/testing_support/extension_rake'
+require 'rails/dummy/tasks'
 
 RSpec::Core::RakeTask.new
 
@@ -21,20 +22,25 @@ task :test_app do
 end
 
 namespace :spree_i18n do
-  desc "Create a translation app"
+  desc 'Generates a dummy app for translations'
   task :create_translation_app do
-
-    ENV["DUMMY_APP_PATH"] = "/"
+    ENV["RAILS_ENV"] = "development"
+    ENV["DUMMY_APP_PATH"] = "translation_holder/dummy"
     Rake::Task["dummy:app"].invoke
   end
 
   desc 'Sync Translation Files'
   task :translation_sync do
-    exec "cd translation_dummy && bundle exec rake translation:sync"
+    exec "cd translation_holder/dummy && bundle exec rake translation:sync"
+  end
+
+  desc 'Sync Translation Init'
+  task :translation_init do
+    exec "cd translation_holder/dummy && bundle exec rake translation:init"
   end
 
   desc 'Sync & Purge Translation Files'
   task :translation_sync_and_purge do
-    exec "cd translation_dummy &&  bundle exec rake translation:sync_and_purge"
+    exec "cd translation_holder/dummy &&  bundle exec rake translation:sync_and_purge"
   end
 end
